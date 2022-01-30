@@ -219,35 +219,86 @@ hr {
     transform:rotate(90deg);
 }
 
-#neon-nbtn {
-  align-items: center;
-  justify-content: space-around;
+
+.bcontainer {
+  position: relative;
+  width: 50%;
 }
 
-.nbtn {
-  background-color: transparent;
-  font-size: 14px;
-  padding: 10px 20px;
-  border-color: transparent;
+.bimage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 10px;
 }
 
-.one {
-  color: #f40654;
-  border-radius:15px;
-  width: 15px;
-  height: 40px;
-  padding-top: 8px;
-  padding-left: 5px;
-
+.bmiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.nbtn:hover {
-  color: black;
+.bcontainer:hover .bimage {
+  opacity: 0.3;
+  background-color: white;
 }
 
-.one:hover {
-  background-color: #f40654;
-  -webkit-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
-  -moz-box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
-  box-shadow: 10px 10px 99px 6px rgba(76,201,240,1);
+.bcontainer:hover .bmiddle {
+  opacity: 1;
+}
+
+.btext {
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 10px;
+  color:#f40654;
+  font-size: 15px;
+  padding: 2px 3px;
+}
+
+.grow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+  background-color:white;
+  border-radius: 15px;
+  box-shadow: 15px 5px 120px 10px #f40654;
+}
+
+/* Create four equal columns that sits next to each other */
+.gcolumn {
+  flex: 25%;
+  max-width: 25%;
+  padding: 2px 0;
+}
+
+.gcolumn img {
+  margin-top: 4px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 2px 0;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
