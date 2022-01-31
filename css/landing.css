@@ -228,6 +228,7 @@ hr {
 .bimage {
   opacity: 1;
   display: block;
+  justify-content: space-around;
   width: 100%;
   height: auto;
   transition: .5s ease;
@@ -266,25 +267,28 @@ hr {
 
 .grow {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  padding: 5px 10px;
   background-color:white;
   border-radius: 15px;
-  box-shadow: 15px 5px 120px 10px #f40654;
+  box-shadow: 2px 1px 20px 10px #f40654;
+  padding-left: 70px;
 }
 
 /* Create four equal columns that sits next to each other */
 .gcolumn {
   flex: 25%;
   max-width: 25%;
-  padding: 2px 0;
+  margin: 6px 6px;
 }
 
 .gcolumn img {
   margin-top: 4px;
   vertical-align: middle;
   width: 100%;
-  padding: 2px 0;
+  padding: 5px 3px;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
