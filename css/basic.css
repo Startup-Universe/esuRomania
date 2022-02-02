@@ -166,7 +166,8 @@ a:active {
     align-items: center;
 }
 
-.card-speaker h6 {
+.card-speaker h6,
+.card-speaker p {
     width: 100%;
 }
 
