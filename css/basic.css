@@ -166,6 +166,10 @@ a:active {
     align-items: center;
 }
 
+.card-speaker h6 {
+    width: 100%;
+}
+
 .card-img-top,
 .card {
     border-radius: .3rem!important;
