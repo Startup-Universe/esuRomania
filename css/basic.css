@@ -162,6 +162,8 @@ a:active {
 
 .card-speaker {
     border: none;
+    display: flex;
+    align-items: center;
 }
 
 .card-img-top,
