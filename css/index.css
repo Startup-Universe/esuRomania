@@ -11,7 +11,7 @@
 @media screen and (min-width: 1024px) {
     #section-partners .bcontainer,
     #section-strategic-partners .bcontainer {
-        min-height: 100px;
+       height: 100px;
     }
 
 }
