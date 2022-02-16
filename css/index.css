@@ -1,5 +1,6 @@
 #section-organisers .bcontainer {
     margin: 0;
+
 }
 
 #section-organisers,
@@ -10,8 +11,10 @@
 
 @media screen and (min-width: 1024px) {
     #section-partners .bcontainer,
+    #section-organisers .bcontainer,
     #section-strategic-partners .bcontainer {
        height: 100px;
     }
+
 
 }
